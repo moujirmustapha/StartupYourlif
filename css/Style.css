@@ -1,0 +1,105 @@
+/*=============================Generate fonts=============================================*/
+@font-face {
+    font-family: 'ClearSans-Light';
+    src: url('../fonts/ClearSans-Light.eot') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ClearSans-Bold';
+    src: url('../fonts/ClearSans-Bold.eot') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ClearSans-Italic';
+    src: url('../fonts/ClearSans-Italic.eot') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ClearSans';
+    src: url('../fonts/ClearSans.eot') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+*
+{
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    overflow-y: scroll;
+    overflow-x: hidden;
+    color: #333;
+}
+/*==============header=============================*/
+.coverwaper
+{
+    background-image: url("../images/header-bg.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 779px;
+}
+.header-overlay
+{position: absolute;
+    background-color: rgba(31, 31, 31, 0.75);
+    height: 779px;
+}
+.navbar-dark .navbar-nav .nav-link
+{
+    font-family: 'ClearSans-Light';
+    padding-right: 25px;
+    color: #cccccc;
+
+}
+.navbar-dark .navbar-nav .nav-link:hover
+{
+    color: green;
+    transition: all 30ms ease-in;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  Media Query */
+/* Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 576px) {
+    .header{ background-color: rgba(31, 31, 31, 0.52); text-align: center;position: absolute;}
+
+
+}
+
+/* Small devices (landscape phones, 576px and up) */
+
+@media (min-width: 576px) and (max-width: 768px) {
+    .header{ background-color: rgba(31, 31, 31, 0.52);   position: absolute;text-align: center }
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 992px) {
+    .header{ background-color: rgba(31, 31, 31, 0.52);text-align: center ;position: absolute;}
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1200px) {
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px)
+{
+
+}
