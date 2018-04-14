@@ -35,31 +35,44 @@ body
     color: #333;
 }
 /*==============header=============================*/
-.coverwaper
+
+.header
 {
-    background-image: url("../images/header-bg.jpg");
-    background-size: cover;
+    position: absolute;
     width: 100%;
-    height: 779px;
+    z-index: 99;
 }
-.header-overlay
-{position: absolute;
-    background-color: rgba(31, 31, 31, 0.75);
-    height: 779px;
-}
-.navbar-dark .navbar-nav .nav-link
+.Bg-Slide
 {
-    font-family: 'ClearSans-Light';
-    padding-right: 25px;
-    color: #cccccc;
+    background: url("../images/header-bg.jpg") no-repeat center;
+    background-size: cover;
+}
+.slider-content-wrapper {
+    margin-top: 85px;
+    height: 400px;
+    display: flex;
+    text-align: center;
+    align-items: center;
 
 }
-.navbar-dark .navbar-nav .nav-link:hover
-{
-    color: green;
-    transition: all 30ms ease-in;
+.slider-content h1 span{
+    color: #4aa500;
+    font-size: 50px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    line-height: 1;
+    margin: 0 0 15px;
+    text-transform: unset;
 }
-
+.slide-full .slider-content-wrapper {
+    height: 100vh;
+    margin-top: 0;
+}
+.cd-words-wrapper b {
+    color: #4aa500;
+    font-weight: lighter;
+    font-family: ClearSans-Light, serif;
+}
 
 
 
@@ -75,7 +88,7 @@ body
 /*  Media Query */
 /* Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 576px) {
-    .header{ background-color: rgba(31, 31, 31, 0.52); text-align: center;position: absolute;}
+
 
 
 }
@@ -83,13 +96,13 @@ body
 /* Small devices (landscape phones, 576px and up) */
 
 @media (min-width: 576px) and (max-width: 768px) {
-    .header{ background-color: rgba(31, 31, 31, 0.52);   position: absolute;text-align: center }
+
 
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 992px) {
-    .header{ background-color: rgba(31, 31, 31, 0.52);text-align: center ;position: absolute;}
+
 
 }
 
