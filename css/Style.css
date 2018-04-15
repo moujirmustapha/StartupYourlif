@@ -35,44 +35,128 @@ body
     color: #333;
 }
 /*==============header=============================*/
-
+.Bg-images
+{    background: url("../images/Bg_Image.jpg") no-repeat fixed top center;
+    min-height: 100vh;
+    position: relative;
+    background-size: cover;
+    width: 100%;
+}
+.header-overlay
+{
+    background-color: rgba(31,31,31,0.71);
+    height: 100vh;
+}
 .header
 {
-    position: absolute;
+    position: relative;
     width: 100%;
     z-index: 99;
 }
-.Bg-Slide
-{
-    background: url("../images/header-bg.jpg") no-repeat center;
-    background-size: cover;
+
+
+.navbar-dark .navbar-nav .nav-link{
+        overflow: hidden;
+        color: #cccccc;
+    position: relative;
+    outline: none;
 }
-.slider-content-wrapper {
-    margin-top: 85px;
-    height: 400px;
-    display: flex;
+.navbar-dark .navbar-nav .nav-link:hover
+{
+    color: #4aa500;
+    border-bottom: 1px solid #4aa500;
+}
+
+
+
+.caption
+{
+    position: absolute;
+    bottom: 48%;
     text-align: center;
-    align-items: center;
+    left: 30%;
+    font-family: ClearSans-Light, serif;
+    display: block;
 
 }
-.slider-content h1 span{
-    color: #4aa500;
-    font-size: 50px;
-    font-weight: 700;
-    letter-spacing: 1px;
-    line-height: 1;
-    margin: 0 0 15px;
-    text-transform: unset;
-}
-.slide-full .slider-content-wrapper {
-    height: 100vh;
-    margin-top: 0;
-}
+.caption .cd-headline{font-size: 40px}
 .cd-words-wrapper b {
     color: #4aa500;
-    font-weight: lighter;
-    font-family: ClearSans-Light, serif;
+    letter-spacing: 12px
 }
+.caption h1{color: #ccc;letter-spacing: 7px}
+.scroll-down {
+    opacity: 1;
+    -webkit-transition: all .5s ease-in 3s;
+
+}
+
+.scroll-down {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    margin-left: -16px;
+    display: block;
+    width: 50px;
+    height: 50px;
+    border: 2px solid #FFF;
+    background-size: 14px auto;
+    border-radius: 50%;
+    z-index: 2;
+    -webkit-animation: bounce 2s infinite 2s;
+    animation: bounce 2s infinite 2s;
+    -moz-animation:bounce 2s infinite 2s ;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+}
+
+.scroll-down:before {
+    position: absolute;
+    top: calc(50% - 8px);
+    left: calc(55% - 8px);
+    transform: rotate(-45deg);
+    display: block;
+    width: 12px;
+    height: 12px;
+    content: "";
+    border: 2px solid white;
+    border-top-width: 0;
+    border-right-width: 0;
+}
+
+@keyframes bounce {
+    0%,
+    100%,
+    20%,
+    50%
+    {
+        -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+        transform: translateY(0);
+    }
+    80% {
+        -webkit-transform: translateY(-10px);
+        -ms-transform: translateY(-10px);
+        transform: translateY(-10px);
+    }
+    40% {
+        -webkit-transform: translateY(-60px);
+        -ms-transform: translateY(-60px);
+        transform: translateY(-60px);
+
+    }
+    60% {
+        -webkit-transform: translateY(-30px);
+        -ms-transform: translateY(-30px);
+        transform: translateY(-30px);
+    }
+}
+
+.content
+{
+    position: absolute;
+}
+
 
 
 
@@ -88,6 +172,21 @@ body
 /*  Media Query */
 /* Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 576px) {
+    .header
+    {
+        position: absolute;
+        width: 100%;
+        z-index: 99;
+        background-color: rgba(31, 31, 31, 0.53);
+        text-align: center;
+    }
+    .navbar-dark .navbar-nav .nav-link:hover
+    {
+        color: #4aa500;
+
+    }
+
+
 
 
 
@@ -96,18 +195,56 @@ body
 /* Small devices (landscape phones, 576px and up) */
 
 @media (min-width: 576px) and (max-width: 768px) {
+    .header
+    {
+        position: absolute;
+        width: 100%;
+        z-index: 99;
+        background-color: rgba(31, 31, 31, 0.75);
+        text-align: center;
+    }
+    .navbar-dark .navbar-nav .nav-link:hover
+    {
+        color: #4aa500;
 
+    }
 
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 992px) {
+    .header
+    {
+        position: absolute;
+        width: 100%;
+        z-index: 99;
+        background-color: rgba(31, 31, 31, 0.75);
+        text-align: center;
+    }
+    .navbar-dark .navbar-nav .nav-link:hover
+    {
+        color: #4aa500;
 
+    }
 
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1200px) {
+
+    .header
+    {
+        position: absolute;
+        width: 100%;
+        z-index: 99;
+        background-color: rgba(31, 31, 31, 0.75);
+        text-align: center;
+    }
+    .navbar-dark .navbar-nav .nav-link:hover
+    {
+        color: #4aa500;
+
+    }
 
 }
 
