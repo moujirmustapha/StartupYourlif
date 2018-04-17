@@ -4,32 +4,49 @@ $(function() {
         return false;
     });
 });
+/*
+$(document).ready(function(){
+    var owl = $('.owl-carousel');
+    owl.owlCarousel({
+        loop:true,
+        dots:false,
+        margin:5,
+        nav:true,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:3
+            },
+            1000:{
+                items:5
+            }
+        }
+    });*/
 
 $('.owl-carousel').owlCarousel({
     loop:true,
-    margin:10,
+    margin:5,
     dots:false,
     nav:true,
-    owlnav:false,
+    autoplay:true,
+    autoplayTimeout:3000,
+    autoplayHoverPause:false,
+    responsiveClass:true,
     responsive:{
         0:{
-            items:1
-        },
-        500:{
-            items:3
+            items:2,
+
         },
         600:{
-            items:6
+            items:3,
+        },
+        1000:{
+            items:6,
         }
     }
+
+
 });
-// Go to the next item
-$('.customNextBtn').click(function() {
-    owl.trigger('next.owl.carousel');
-});
-// Go to the previous item
-$('.customPrevBtn').click(function() {
-    // With optional speed parameter
-    // Parameters has to be in square bracket '[]'
-    owl.trigger('prev.owl.carousel', [300]);
-});
+
