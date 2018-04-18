@@ -33,33 +33,39 @@ body
     overflow-y: scroll;
     overflow-x: hidden;
     color: #333;
+    -webkit-user-select: none;
+
 }
 /*==============header=============================*/
 .Bg-images
 {    background: url("../images/Bg_Image.jpg") no-repeat fixed top center;
     min-height: 100vh;
-    position: relative;
+
     background-size: cover;
     width: 100%;
+
 }
 .header-overlay
 {
     background-color: rgba(31,31,31,0.71);
     height: 100vh;
+
 }
 .header
 {
-    position: relative;
+    position: absolute;
     width: 100%;
     z-index: 99;
+    top: 10px;
 }
-
 
 .navbar-dark .navbar-nav .nav-link{
         overflow: hidden;
         color: #cccccc;
-    position: relative;
-    outline: none;
+        outline: none;
+        font-family: ClearSans-Light, serif;
+        font-size: 18px;
+
 }
 .navbar-dark .navbar-nav .nav-link:hover
 {
@@ -67,24 +73,25 @@ body
     border-bottom: 1px solid #4aa500;
 }
 
-
-
 .caption
 {
     position: absolute;
-    bottom: 48%;
-    text-align: center;
-    left: 30%;
+    left: 50%;
     font-family: ClearSans-Light, serif;
-    display: block;
-
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
 }
-.caption .cd-headline{font-size: 40px}
+.caption .cd-headline
+{   font-size: 54px;
+    font-family: ClearSans-Bold, serif;
+    font-weight: bold}
 .cd-words-wrapper b {
     color: #4aa500;
-    letter-spacing: 12px
+    letter-spacing: 12px;
+    font-family: ClearSans-Bold;
 }
-.caption h1{color: #ccc;letter-spacing: 7px}
+.caption h1{color: #ccc;font-size: 54px;font-family: ClearSans-Light, serif}
 .scroll-down {
     opacity: 1;
     -webkit-transition: all .5s ease-in 3s;
@@ -175,22 +182,9 @@ body
     color: #777777;
     letter-spacing: 1.4px;
 }
-.slide
-{
-    width: 100%;
-    height: 25vh;
-}
 .owl-carousel .owl-item img
 {
     width: auto;
-}
-nav .owl-prev
-{
-    position: absolute;
-    left: 0;
-    top: -40%;
-    background-color: red;
-    right: 100%;
 }
  .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot
 {
@@ -212,9 +206,43 @@ nav .owl-prev
 
     top: 0;
 }
-
-
-
+.ligne
+{
+    background-color: #cccccc;
+    height: 2px;
+}
+.quote:before
+{
+    content: "“";
+    position: absolute;
+    font-size: 92px;
+    left: 0;
+    top: 0;
+    transform: translate(-50%,-21%);
+    color: #cccccc;
+}
+.quote:after
+{
+    content: "”";
+    position: absolute;
+    font-size: 92px;
+    left: 100%;
+    top: 0;
+    transform: translate(-85%,8%);
+    color: #cccccc;
+}
+.quote
+{
+    color: #777777;
+    font-family: ClearSans-Light, serif;
+    font-size: 26px;
+}
+.quote-name
+{
+    font-size: 12px;
+    font-family: ClearSans-Light, serif;
+    color: #000000;
+}
 
 
 
@@ -228,17 +256,14 @@ nav .owl-prev
 @media (max-width: 576px) {
     .header
     {
-        position: absolute;
+        position: fixed;
         width: 100%;
         z-index: 99;
-        background-color: rgba(31, 31, 31, 0.53);
+        background-color: rgba(31, 31, 31, 0.75);
         text-align: center;
+        top: 0;
     }
-    .navbar-dark .navbar-nav .nav-link:hover
-    {
-        color: #4aa500;
 
-    }
 
 
 
@@ -251,17 +276,14 @@ nav .owl-prev
 @media (min-width: 576px) and (max-width: 768px) {
     .header
     {
-        position: absolute;
+        position: fixed;
         width: 100%;
         z-index: 99;
         background-color: rgba(31, 31, 31, 0.75);
         text-align: center;
+        top: 0;
     }
-    .navbar-dark .navbar-nav .nav-link:hover
-    {
-        color: #4aa500;
 
-    }
 
 }
 
@@ -269,17 +291,14 @@ nav .owl-prev
 @media (min-width: 768px) and (max-width: 992px) {
     .header
     {
-        position: absolute;
+        position: fixed;
         width: 100%;
         z-index: 99;
         background-color: rgba(31, 31, 31, 0.75);
         text-align: center;
+        top: 0;
     }
-    .navbar-dark .navbar-nav .nav-link:hover
-    {
-        color: #4aa500;
 
-    }
 
 }
 
@@ -293,6 +312,7 @@ nav .owl-prev
         z-index: 99;
         background-color: rgba(31, 31, 31, 0.75);
         text-align: center;
+        top: 0;
     }
     .navbar-dark .navbar-nav .nav-link:hover
     {
