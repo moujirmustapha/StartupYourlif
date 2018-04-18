@@ -1,9 +1,26 @@
-$(function() {
-    $('.scroll-down').click (function() {
-        $('html, body').animate({scrollTop: $('#AboutSyl').offset().top }, 'slow');
-        return false;
+/*$(document).ready(function(){
+    $(window).bind('scroll', function() {
+        var navHeight = $( window ).height() >1;
+        if ($(window).scrollTop() > navHeight) {
+            $('navbar').addClass('navfixed');
+        }
+        else {
+            $('navbar').removeClass('navfixed');
+        }
     });
-});
+});*/
+/*
+$(window).on('scroll', function () {
+    var windowSize = $(window).height();
+    if (windowSize > 1 && $(this).scrollTop() > 1) {
+        $('.header').css('postion:','fixed');
+    }
+    else {
+        $('.header').css('postion:','absolute');
+    }
+});*/
+
+
 $('.owl-carousel').owlCarousel({
     loop:true,
     margin:5,
