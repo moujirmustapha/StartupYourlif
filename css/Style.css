@@ -1,4 +1,17 @@
-/*=============================Generate fonts=============================================*/
+/* =========== Generate animation= ============ */
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-30px);
+    }
+    60% {
+        transform: translateY(-15px);
+    }
+}
+/* ============================================ */
+/* =========== Generate fonts============ */
 @font-face {
     font-family: 'clearSans-Light';
         src: url('../fonts/clearSans-Light.eot') format('embedded-opentype');
@@ -19,7 +32,6 @@
     font-style: normal;
 
 }
-}
 @font-face {
     font-family: 'clearsans-bold';
     src: url('../fonts/clearSans-italic.eot') format('embedded-opentype');
@@ -36,91 +48,90 @@
     padding: 0;
 }
 body
-{   font-family: 'ClearSans-Light';
-    overflow-y: scroll;
+{   overflow-y: scroll;
     overflow-x: hidden;
     color: #333;
     -webkit-user-select: none;
+}
+/* ============================================ */
 
-}
-/*==============header=============================*/
-.Bg-images
-{    background: url("../images/Bg_Image.jpg") no-repeat fixed top center;
-    min-height: 100vh;
-    background-size: cover;
-    width: 100%;
-}
-.header-overlay
-{
-    background-color: rgba(31,31,31,0.71);
-    height: 100vh;
-}
-.header
+/* =========== Navigation ============ */
+.header nav
 {
     position: absolute;
-    top: 1%;
     width: 100%;
-
+    z-index: 1;
 }
 .navbar-dark .navbar-nav .nav-link{
-        overflow: hidden;
-        color: #cccccc;
-        outline: none;
-        font-family: 'clearSans-Light';
-        font-weight: lighter;
-        font-size: 18px;
-
-}
-.navbar-dark .navbar-nav .nav-link:hover
-{
-    color: #4aa500;
-    border-bottom: 1px solid #4aa500;
-}
-
-.caption
-{
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%);
-    width: 100%;
-}
-.caption .cd-headline
-{   font-size: 54px;
-    font-family: 'ClearSans-Bold', serif;
-    font-weight: bold}
-.cd-words-wrapper b {
-    color: #4aa500;
-    letter-spacing: 12px;
-    font-family: 'ClearSans-Bold', serif;
+    overflow: hidden;
+    color: #cccccc;
+    outline: none;
+    font-family: 'clearSans-Light', serif;
     font-weight: lighter;
+    font-size: 18px;
 }
-.caption h1{color: #ccc;font-size: 54px;font-family: ClearSans-Light, serif;}
+/* ============================================ */
+
+/* =============header==============*/
+.header {
+    background: url("../images/Bg_Image.jpg") no-repeat fixed top;
+    background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+    width: 100%;
+    min-height: 100vh;
+}
+.header-overlay {
+    background-color: rgba(31, 31, 31, 0.75);
+    width: 100%;
+    min-height: 100vh;
+}
+.header .header-overlay .headertext {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    transform: translate(0%,167%);
+
+}
+.header .header-overlay .headertext .cd-headline {
+    font-size: 54px;
+    font-family: 'ClearSans-Bold', serif;
+    font-weight: bold;
+    color: #4aa500;
+}
+.header .header-overlay .headertext .cd-headline .cd-words-wrapper b {
+    color: #4aa500;
+    letter-spacing: 4px;
+    font-family: 'ClearSans-Bold', serif;
+    font-weight: bold;
+    font-size: 54px;
+}
+.header .header-overlay .headertext h1 {
+    font-size: 40px;
+    font-family: 'ClearSans-Light', serif;
+    font-weight: lighter;
+    letter-spacing: 3px;
+    color: #cccccc;
+}
 .scroll-down {
     opacity: 1;
     -webkit-transition: all .5s ease-in 3s;
-
 }
-
 .scroll-down {
     position: absolute;
     bottom: 30px;
     left: 50%;
     margin-left: -16px;
-    display: block;
-    width: 50px;
-    height: 50px;
-    border: 2px solid #FFF;
-    background-size: 14px auto;
-    border-radius: 50%;
-    z-index: 2;
-    -webkit-animation: bounce 2s infinite 2s;
-    animation: bounce 2s infinite 2s;
-    -moz-animation:bounce 2s infinite 2s ;
-    -webkit-transition: all .2s ease-in;
+    animation: bounce 2s infinite ;
+    -webkit-animation: bounce 2s infinite ;
+    -moz-animation:bounce 2s infinite  ;
     transition: all .2s ease-in;
-}
+    -webkit-transition: all .2s ease-in;
+    -moz-transition: all .2s ease-in;
 
+}
 .scroll-down:before {
     position: absolute;
     top: calc(50% - 8px);
@@ -129,125 +140,116 @@ body
     display: block;
     width: 12px;
     height: 12px;
-    content: "";
-    border: 2px solid white;
-    border-top-width: 0;
-    border-right-width: 0;
 }
+/* ============================================ */
 
-@keyframes bounce {
-    0%,
-    100%,
-    20%,
-    50%
-    {
-        -webkit-transform: translateY(0);
-        -ms-transform: translateY(0);
-        transform: translateY(0);
-    }
-    80% {
-        -webkit-transform: translateY(-10px);
-        -ms-transform: translateY(-10px);
-        transform: translateY(-10px);
-    }
-    40% {
-        -webkit-transform: translateY(-60px);
-        -ms-transform: translateY(-60px);
-        transform: translateY(-60px);
+/* =============about section==============*/
+.about{
 
-    }
-    60% {
-        -webkit-transform: translateY(-30px);
-        -ms-transform: translateY(-30px);
-        transform: translateY(-30px);
-    }
+    min-height: 250vh;
+    background-color: bisque;
 }
-.aboutSyl
-{ font-family: 'ClearSans-Light', serif;
-    max-width: 100%;
-    min-height: 100vh;
+.about .what{
+    font-family: 'ClearSans-Light', serif;
+    width: 100%;
+    margin-top: 25px;
 }
-.aboutSyl .title1 h6
-{ font-family: 'ClearSans-Light', serif;
+.about .what h6{
     color: #000000;
     font-size: 20px;
-    text-align: center;
+    padding-bottom: 10px;
 }
-.aboutSyl .title2 h4
-{ font-family: 'ClearSans-Light', serif;
+.about .what h4{
     font-size: 30px;
     color: #555555;
-    text-align: center;
 }
-.aboutSyl .contant-text P
+.about .what P
 {
-    font-size: 18px;
+    font-size: 23px;
     font-family:'ClearSans-Light', serif ;
+    font-weight: lighter;
     color: #777777;
-    letter-spacing: 1.4px;
 }
-.owl-carousel .owl-item img
+.about .owl-carousel .owl-item img
 {
     width: auto;
 }
- .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot
+.owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot
 {
     position: absolute;
-
-    font-size: 41px;
-
-     left: -20px;
-
-    top: 0;
+    font-size: 100px;
+    bottom: -20px;
+    right: 100%;
+    color: #969696;
 }
-.owl-carousel .owl-nav button.owl-next,  .owl-carousel button.owl-dot
+.owl-carousel .owl-nav button.owl-prev:hover, .owl-carousel button.owl-dot,.owl-carousel .owl-nav  button.owl-next:hover, .owl-carousel button.owl-dot
+{
+    color: #4aa500;
+    background-color: transparent;
+}
+.owl-carousel .owl-nav  button.owl-next
 {
     position: absolute;
-
-    font-size: 41px;
-
-    right: 0;
-
-    top: 0;
+    font-size: 100px;
+    bottom: -20px;
+    left: 96%;
+    color: #969696;
 }
-.ligne
-{
+.about .ligne{
     background-color: #cccccc;
-    height: 2px;
+    height: 1px;
 }
-.quote:before
+.about .quote p{
+    color: #777777;
+    font-family: 'ClearSans-Light', serif;
+    font-size: 27px;
+}
+.about .quote p:before
 {
     content: "“";
     position: absolute;
     font-size: 92px;
-    left: 0;
-    top: 0;
+    left: -30px;
+    top: -90px;
     transform: translate(-50%,40%);
-    color: #cccccc;
+    color: #d4d4d4;
 }
-.quote:after
+.about .quote p:after
 {
     content: "”";
     position: absolute;
     font-size: 92px;
-    left: 84%;
-    top: 0;
-    transform: translate(-0%,171%);
-    color: #cccccc;
+    left: 99%;
+    top: -50px;
+    transform: translate(-50%,40%);
+    color: #d4d4d4;
 }
-.quote
-{
-    color: #777777;
+.about .mission h6 ,.about .vision h6 {
+    color: #4aa500;
+    font-size: 20px;
     font-family: 'ClearSans-Light', serif;
-    font-size: 26px;
+}
+.about .mission p ,.about .vision p {
+    font-family: 'ClearSans-Light', serif;
+    color: #777777;
+    font-size: 20.1px;
+}
+.about .whatwedo h6 {
+    color: #000000;
+    font-size: 20px;
+    font-family: 'ClearSans-Light',Serif;
+    text-align: center;
 
 }
-.quote-name
-{
-    font-size: 12px;
-    font-family: 'ClearSans-Light', serif;
-    color: #000000;
+.about .whatwedo p{
+    font-size: 16px;
+    font-family: "clearSans-Light", serif;
+    margin-top: 30px;
 }
+/* ============================================ */
+/*
+
+
 .Mission h6,.vision h6
 {
     color: #4aa500;
@@ -303,18 +305,23 @@ body
 }
 
 
-
+*/
 
 /*  Media Query */
 /* Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 576px) {
-
-
-
-
-
-
-
+    /* =========== Navigation ============ */
+    .header nav {background-color: rgba(31,31,31,0.75);}
+    .header nav .navbar-brand img {width: 80%;}
+    .navbar-dark .navbar-nav .nav-link{
+       text-align: center;
+    }
+    /* =============header==============*/
+    .header .header-overlay .headertext {transform: translate(0%,140%);}
+    .header .header-overlay .headertext .cd-headline ,.header .header-overlay .headertext .cd-headline .cd-words-wrapper b
+    {font-size: 40px;}
+    .header .header-overlay .headertext h1
+    {font-size: 30px;}
 }
 
 /* Small devices (landscape phones, 576px and up) */
