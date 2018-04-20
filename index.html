@@ -10,15 +10,15 @@
     <!--link Icon-->
     <link rel="icon" type="image/png" href="Image/icon.png">
     <!--link fontsawesome-->
-    <link rel="stylesheet" type="text/css" href="css/fontawesome-all.min.css">
+    <link rel="stylesheet"  href="css/fontawesome-all.min.css">
     <!--link owl.carousel-->
-    <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" type="text/css" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet"  href="css/owl.carousel.min.css">
+    <link rel="stylesheet"  href="css/owl.theme.default.min.css">
     <!--link Bootstrap-->
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="css/elements.css">
+    <link rel="stylesheet"  href="css/bootstrap.min.css">
+    <link rel="stylesheet"  href="css/elements.css">
     <!--link main style-->
-    <link rel="stylesheet" type="text/css" href="css/Style.css">
+    <link rel="stylesheet"  href="css/Style.css">
 
 
 </head>
@@ -27,8 +27,8 @@
             <header class="header">
 
                 <!-- Navigation -->
-
-                <nav class="navbar navbar-expand-lg navbar-dark  text-color">
+                <div class="header_nav">
+                    <nav class="navbar navbar-expand-lg navbar-dark  text-color">
                     <div class="container">
                         <a class="navbar-brand" href="index.html"><img  src="images/logo.png" alt="logo"></a>
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -42,14 +42,14 @@
                                 <li class="nav-item ml-lg-2 ml-md-2 "><a class="nav-link" href="#">Events &amp; competitions</a></li>
                                 <li class="nav-item ml-lg-2 ml-md-2 "><a class="nav-link" href="#">Partners</a></li>
                                 <li class="nav-item  ml-lg-2 ml-md-2"><a class="nav-link" href="#" >Join us!</a> </li>
-                                <li class="nav-item ml-lg-2"><a class="nav-link" href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li class="nav-item ml-lg-2 facb"><a class="nav-link" href="#"><i class="fab fa-twitter"></i></a></li>
                                 <li class="nav-item"><a class="nav-link" href="#"><i class="fab fa-facebook-f"></i></a></li>
                                 <li class="nav-item "><a class="nav-link" href="#"><i class="fas fa-envelope"></i></a></li>
                             </ul>
                         </div>
                     </div>
                 </nav>
-
+                </div>
                 <!-- /Navigation -->
 
                 <!--hero-->
@@ -59,7 +59,7 @@
                        <div class="row">
                           <div class="col col-sm-12 col-md-7 col-lg-8 col-xl-9 m-auto">
                               <div class="headertext">
-                                  <h1 class="cd-headline letters rotate-3  text-center">
+                                  <h1 class="cd-headline letters rotate-2  text-center is-full-width">
                                         <span class="cd-words-wrapper">
                                             <b class="is-visible">Hello .</b>
                                             <b>Bonjour</b>
@@ -103,7 +103,7 @@
                         </div>
 
                     </div>
-                    <div class="row mt-5 justify-content-center">
+                    <div class="row pb-5 justify-content-center">
                         <div class=" col-8 m-auto">
                             <div class="owl-carousel owl-theme owl-loaded">
                                 <div class="owl-stage-outer">
@@ -126,21 +126,23 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row mt-5 justify-content-center ">
+                    <div class="row pb-5 justify-content-center ">
                         <div class="col-5 m-auto" >
                             <hr class="ligne">
                         </div>
                     </div>
-                    <div class="row mt-5 justify-content-center ">
+                    <div class="row pb-5 justify-content-center ">
                         <div class="col-sm-12 col-md-9 col-lg-9 m-auto">
                             <div class="quote text-center">
-                                <p>
-                                    Vision without action is merly a dream, action without vision just passes the time, vision with action can change the world.</p>
-                                <span class="quote-name">— Joe Baker</span>
+                                <blockquote class="blockquote text-center">
+                                    <p>Vision without action is merly a dream, action without vision just passes the time,
+                                        vision with action can change the world.</p>
+                                    <footer class="blockquote-footer quote-name">Joe Baker</footer>
+                                </blockquote>
                             </div>
                         </div>
                     </div>
-                    <div class="row mt-5 justify-content-center ">
+                    <div class="row pb-5 justify-content-center ">
                         <div class="col-10 m-auto">
                             <div class="row">
                                 <div class=" col-sm-12  col-md-6" >
@@ -167,16 +169,16 @@
                             </div>
                         </div>
                 </div>
-                    <div class="row mt-5 justify-content-center ">
+                    <div class="row pb-5 justify-content-center ">
                         <div class="col-5 m-auto" >
                             <hr class="ligne">
                         </div>
                     </div>
-                    <div class="row mt-5">
-                        <div class="col-6 m-auto">
+                    <div class="row pb-5 justify-content-center">
+                        <div class="col-8 m-auto">
                             <div class="whatwedo">
                                 <h6>WHAT WE DO</h6>
-                                <p>We identify and gather innovative entrepreneurs that have a link with Morocco,
+                                <p class="lead">We identify and gather innovative entrepreneurs that have a link with Morocco,
                                     whether they are Moroccans living in Morocco or abroad but also international
                                     entrepreneurs based in Morocco.  We help them share their experience
                                     and knowledge, connect them with investors, mentors, experts and PR and give them
@@ -184,11 +186,64 @@
                             </div>
                         </div>
                     </div>
+                    <div class="row pb-5 justify-content-center">
+
+                            <div class="col-sm-6 col-md-6 col-lg-3 text-center pb-sm-5 ">
+                                <div class="imagehover">
+                                <img class="pb-3" src="images/illustration-gather.png" alt="gather">
+                                <div class="overlay">
+                                        <p class="text">We identify, select and gather innovative
+                                        entrepreneurs and passionate contributors. We connect them
+                                        with each other through our online platform and casual Open
+                                        Coffees.</p>
+
+                                </div>
+                                <h6>Identify, select, gather</h6>
+                            </div>
+                            </div>
+                            <div class="col-sm-6 col-md-6 col-lg-3 text-center pb-sm-5 ">
+                                <div class="imagehover">
+                                    <img class="pb-3" src="images/illustration-connect.png" alt="connect">
+                                    <h6>Train, share knowledge</h6>
+                                    <div class="overlay">
+                                        <p class="text">We identify, select and gather innovative
+                                            entrepreneurs and passionate contributors. We connect them
+                                            with each other through our online platform and casual Open
+                                            Coffees.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-6 col-lg-3 text-center pb-sm-5 ">
+                                <div class="imagehover">
+                                    <img class="pb-3" src="images/illustration-knowledge.png" alt="knowledge">
+                                    <h6>Connect</h6>
+                                    <div class="overlay">
+                                        <p class="text">We identify, select and gather innovative
+                                            entrepreneurs and passionate contributors. We connect them
+                                            with each other through our online platform and casual Open
+                                            Coffees.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-6 col-lg-3 text-center pb-sm-5 ">
+                                <div class="imagehover">
+                                    <img class="pb-3" src="images/illustration-visibility.png" alt="visibility">
+                                        <h6>Give visibility</h6>
+                                        <div class="overlay">
+                                            <p class="text">We identify, select and gather innovative
+                                            entrepreneurs and passionate contributors. We connect them
+                                            with each other through our online platform and casual Open
+                                            Coffees.</p>
+                                        </div>
+                                </div>
+
+                            </div>
+                    </div>
                 <!--  /container -->
 
             </section>
         <!-- /about section -->
-
 
 
     <!--Script -->

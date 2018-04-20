@@ -1,3 +1,12 @@
+$(window).on('scroll', function () {
+    var windowSize = $(window).height();
+    if (windowSize > 1 && $(this).scrollTop() > 1) {
+        $('.header_nav').addClass('is_sticky');
+    }
+    else {
+        $('.header_nav').removeClass('is_sticky');
+    }
+});
 /*Scrol down Section About */
 $(function() {
     $('.scroll-down').click (function() {

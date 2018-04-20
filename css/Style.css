@@ -33,14 +33,22 @@
 
 }
 @font-face {
-    font-family: 'clearsans-bold';
+    font-family: 'clearsans-italic';
     src: url('../fonts/clearSans-italic.eot') format('embedded-opentype');
     src: url("../fonts/clearsans-italic.svg") format('svg');
     src: url("../fonts/clearsans-italic.woff") format('woff');
     src: url("../fonts/clearsans-italic.ttf") format('truetype');
     font-weight: normal;
     font-style: normal;
-
+}
+@font-face {
+    font-family: 'clearSans-regular';
+    src: url('../fonts/clearSans-regular.eot') format('embedded-opentype');
+    src: url("../fonts/clearsans-regular.svg") format('svg');
+    src: url("../fonts/clearsans-regular.woff") format('woff');
+    src: url("../fonts/clearsans-regular.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 *
 {
@@ -56,19 +64,25 @@ body
 /* ============================================ */
 
 /* =========== Navigation ============ */
-.header nav
+.header .header_nav
 {
     position: absolute;
+    z-index: 99;
     width: 100%;
-    z-index: 1;
+    transition: all .5s ease-in-out 0s;
 }
 .navbar-dark .navbar-nav .nav-link{
     overflow: hidden;
     color: #cccccc;
     outline: none;
-    font-family: 'clearSans-Light', serif;
+    font-family: 'clearSans-light', serif;
     font-weight: lighter;
     font-size: 18px;
+}
+.is_sticky .header_nav {
+    position: fixed;
+    background: #ffffff;
+    box-shadow: 0 1px 3px rgba(50, 50, 50, 0.2);
 }
 /* ============================================ */
 
@@ -97,20 +111,21 @@ body
 }
 .header .header-overlay .headertext .cd-headline {
     font-size: 54px;
-    font-family: 'ClearSans-Bold', serif;
+    font-family: 'clearSans-Light', serif;
     font-weight: bold;
     color: #4aa500;
 }
+/*
 .header .header-overlay .headertext .cd-headline .cd-words-wrapper b {
     color: #4aa500;
     letter-spacing: 4px;
-    font-family: 'ClearSans-Bold', serif;
-    font-weight: bold;
+    font-family: 'clearSans-bold', serif;
     font-size: 54px;
-}
+    font-style: unset;
+}*/
 .header .header-overlay .headertext h1 {
     font-size: 40px;
-    font-family: 'ClearSans-Light', serif;
+    font-family: 'clearSans-light', serif;
     font-weight: lighter;
     letter-spacing: 3px;
     color: #cccccc;
@@ -147,10 +162,9 @@ body
 .about{
 
     min-height: 250vh;
-    background-color: bisque;
 }
 .about .what{
-    font-family: 'ClearSans-Light', serif;
+    font-family: 'clearSans-light', serif;
     width: 100%;
     margin-top: 25px;
 }
@@ -166,7 +180,7 @@ body
 .about .what P
 {
     font-size: 23px;
-    font-family:'ClearSans-Light', serif ;
+    font-family:'clearSans-light', serif ;
     font-weight: lighter;
     color: #777777;
 }
@@ -174,34 +188,42 @@ body
 {
     width: auto;
 }
+
 .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot
 {
     position: absolute;
-    font-size: 100px;
-    bottom: -20px;
-    right: 100%;
+    font-size: 60px;
+    top: -14px;
+    right: 105%;
     color: #969696;
+    outline-style: none;
+    font-family: 'clearSans-light',Serif;
 }
 .owl-carousel .owl-nav button.owl-prev:hover, .owl-carousel button.owl-dot,.owl-carousel .owl-nav  button.owl-next:hover, .owl-carousel button.owl-dot
 {
     color: #4aa500;
     background-color: transparent;
+    outline-style: none;
 }
 .owl-carousel .owl-nav  button.owl-next
 {
     position: absolute;
-    font-size: 100px;
-    bottom: -20px;
-    left: 96%;
+    font-size: 60px;
+    bottom: 0;
+    left: 100%;
     color: #969696;
+    outline-style: none;
+    font-family: 'clearSans-light',Serif;
+
 }
+
 .about .ligne{
     background-color: #cccccc;
     height: 1px;
 }
 .about .quote p{
     color: #777777;
-    font-family: 'ClearSans-Light', serif;
+    font-family: 'clearSans-light', serif;
     font-size: 27px;
 }
 .about .quote p:before
@@ -227,24 +249,55 @@ body
 .about .mission h6 ,.about .vision h6 {
     color: #4aa500;
     font-size: 20px;
-    font-family: 'ClearSans-Light', serif;
+    font-family: 'clearSans-light', serif;
 }
 .about .mission p ,.about .vision p {
-    font-family: 'ClearSans-Light', serif;
+    font-family: 'clearSans-light', serif;
     color: #777777;
     font-size: 20.1px;
 }
 .about .whatwedo h6 {
     color: #000000;
     font-size: 20px;
-    font-family: 'ClearSans-Light',Serif;
+    font-family: 'clearSans-light',Serif;
     text-align: center;
 
 }
 .about .whatwedo p{
-    font-size: 16px;
+    font-size: 22px;
     font-family: "clearSans-Light", serif;
     margin-top: 30px;
+    color: #777777;
+}
+.about img h6{
+    font-family: "clearSans-regular", serif;
+    font-weight: bold;
+    font-size: 16px;
+}
+.about .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: background-color .5s  linear;
+    background-color: #73bc44;
+}
+
+.imagehover:hover .overlay {
+    opacity: 90%;
+}
+.text {
+    color: #FFFFFF;
+    font-size: 15px;
+    position: absolute;
+    top: 50%;
+    transform: translate(0%, -50%);
+    -ms-transform: translate(0%, -50%);
+    text-align: center;
 }
 /* ============================================ */
 /*

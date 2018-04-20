@@ -92,15 +92,13 @@ $(window).on('load', function() {
 /* ---------------------------------------------
  Header sticky style.
 --------------------------------------------- */
+/*
 $(window).on('scroll', function () {
     var windowSize = $(window).width();
     if (windowSize > 1 && $(this).scrollTop() > 1) {
         $('.sticky-header').addClass('is_sticky');
-        document.getElementById("imgLogo").src = 'img/syl-logo-black.png';
         $('.navbar').removeClass('navbar-dark');
         $('.navbar').addClass('navbar-light');
-
-
     }
     else {
         $('.sticky-header').removeClass('is_sticky');
@@ -109,7 +107,7 @@ $(window).on('scroll', function () {
         $('.navbar').removeClass('navbar-light');
     }
 });
-
+*/
 
 
 
