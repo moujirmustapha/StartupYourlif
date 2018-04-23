@@ -161,7 +161,7 @@ body
 /* =============about section==============*/
 .about{
 
-    min-height: 350vh;
+    min-height: 321vh;
 }
 .about .what{
     font-family: 'clearSans-light', serif;
@@ -322,66 +322,94 @@ body
 .about .imagepress img{
     width: 100%;
 }
-/* ============================================ */
-/*
-
-
-.Mission h6,.vision h6
-{
-    color: #4aa500;
+.about .partners h6{
     font-size: 20px;
-    font-family: 'ClearSans-Light', serif;
+    font-family: 'clearSans-light';
+    color:#4b9e07 ;
 }
-.aboutquote p,.aboutquote p
-{
-    font-size: 22px;
-    font-family: 'ClearSans-Light', serif;
-    color: #777777;
-    line-height: 28px;
-}
-.aboutquote
-{
-    font-family: 'ClearSans-Light', serif;
-    max-width: 100%;
-    min-height: 34vh;
-}
-.why
-{
-    width: 100%;
-    min-height: 100vh;
-}
-.why h6
-{
+.about .partners p {
+    font-size: 16px;
     color: #000000;
+    font-family: 'clearSans-bold';
+}
+.about .partners p>span{
+    display: block;
+    font-size: 14px;
+    font-family: 'clearSans-light';
+    color: #777777;
+}
+/* ============================================ */
+/* =============Startups section==============*/
+.startups{
+    min-height: 100vh;
+    background-color: #f8f8f8;
+}
+.startups  .area-title{
     font-size: 20px;
-    font-family: 'ClearSans-Light',Serif;
+    font-family: 'clearSans-light';
+    color: #000000;
+    text-transform: uppercase;
     text-align: center;
-    font-weight: bolder;
+    padding-top: 30px;
 }
-.why p
-{
-    font-size: 22px;
-    font-family: "clearSans-Light";
-    text-align: justify;
-    font-weight: lighter;
-    margin-top: 30px;
-}
-.hov image
-{
-    -webkit-animation: bounce 2s infinite 2s;
-    animation: bounce 2s infinite 2s;
-    -moz-animation:bounce 2s infinite 2s ;
-    -webkit-transition: all .2s ease-in;
-    transition: all .2s ease-in;
-}
-.hov image:hover
-{
-   transform: rotate(-360deg);
+.startups .button-group .button{
 
+    display: inline-block;
+    margin: 0px 20px;
+    padding-bottom: 10px;
+    font-family: 'clearSans-light';
+    font-size: 16px;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    outline-style: none;
+    outline: none;
+}
+.startups .button-group .button:hover{
+    border-bottom: 5px solid #4b9e07;
+    background: transparent;
+}
+.startups .button-group .button:active,.button.is-checked {
+    border-bottom: 5px solid #4b9e07;
+    background: transparent;
+}
+.startups .button-group .button.is-checked {
+    border-bottom: 5px solid #4b9e07;
+    background: transparent;
+}
+
+.startups .button-group .button:active {
+    border-bottom: 5px solid #4b9e07;
+    background: transparent;
 }
 
 
-*/
+.startups .grid .element-item {
+    position: relative;
+    width: 18%;
+    color: #262524;
+    margin: 0 1% 1% 1%;
+    height: auto;
+}
+.grid:after {
+    content: '';
+    display: inline-block;
+    clear: both;
+}
+.startups .grid .element-item > * {
+    margin: 10px;
+    padding: 0;
+}
+.startups .grid .element-item  .card{
+    background-color: transparent;
+    border: none;
+}
+
+.startups .grid .element-item  .card-body{
+    padding: 0;
+}
+/* ============================================ */
+
 
 /*  Media Query */
 /* Extra small devices (portrait phones, less than 576px)*/
@@ -398,26 +426,53 @@ body
     {font-size: 40px;}
     .header .header-overlay .headertext h1
     {font-size: 30px;}
+    .startups .grid .element-item {
+        position: relative;
+        width: 90%;
+        color: #262524;
+        margin: 0 1% 1% 1%;
+        height: auto;
+    }
+
+
 }
 
 /* Small devices (landscape phones, 576px and up) */
 
 @media (min-width: 576px) and (max-width: 768px) {
-
+    .startups .grid .element-item {
+        position: relative;
+        width: 90%;
+        color: #262524;
+        margin: 0 1% 1% 1%;
+        height: auto;
+    }
 
 
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 992px) {
-
+    .startups .grid .element-item {
+        position: relative;
+        width: 30%;
+        color: #262524;
+        margin: 0 1% 1% 1%;
+        height: auto;
+    }
 
 
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1200px) {
-
+    .startups .grid .element-item {
+        position: relative;
+        width: 18%;
+        color: #262524;
+        margin: 0 1% 1% 1%;
+        height: auto;
+    }
 
 }
 

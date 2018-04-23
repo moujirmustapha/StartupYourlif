@@ -47,4 +47,14 @@ $('.owl-carousel').owlCarousel({
 
 
 });
-
+var $grid = $('.grid').isotope({
+    itemSelector: '.element-item',
+    layoutMode: 'fitRows',
+    getSortData: {
+        category: '[data-category]',
+        weight: function( itemElem ) {
+            var weight = $( itemElem ).find('.weight').text();
+            return parseFloat( weight.replace( /[\(\)]/g, '') );
+        }
+    }
+});
