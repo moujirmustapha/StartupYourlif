@@ -166,23 +166,24 @@ body
 .about .what{
     font-family: 'clearSans-light', serif;
     width: 100%;
-    margin-top: 25px;
+    margin-top: 57px;
 }
 .about .what h6{
     color: #000000;
     font-size: 20px;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
 }
 .about .what h4{
-    font-size: 30px;
+    font-size: 27px;
     color: #555555;
 }
 .about .what P
 {
-    font-size: 23px;
-    font-family:'clearSans-light', serif ;
+    font-size: 20px;
+    font-family: 'clearSans-light', serif;
     font-weight: lighter;
     color: #777777;
+    margin-left: 78px;
 }
 .about .owl-carousel .owl-item img
 {
@@ -219,12 +220,11 @@ body
 
 .about .ligne{
     background-color: #cccccc;
-    height: 1px;
 }
 .about .quote p{
     color: #777777;
     font-family: 'clearSans-light', serif;
-    font-size: 27px;
+    font-size: 26px;
 }
 .about .quote p:before
 {
@@ -254,7 +254,7 @@ body
 .about .mission p ,.about .vision p {
     font-family: 'clearSans-light', serif;
     color: #777777;
-    font-size: 20.1px;
+    font-size: 17px;
 }
 .about .whatwedo h6 {
     color: #000000;
@@ -264,10 +264,11 @@ body
 
 }
 .about .whatwedo p{
-    font-size: 22px;
+    font-size: 20px;
     font-family: "clearSans-Light", serif;
     margin-top: 30px;
     color: #777777;
+    margin-left: 50px;
 }
 .about img h6{
     font-family: "clearSans-regular", serif;
@@ -315,12 +316,12 @@ body
     color: #4b9e07;
 }
 .about .presstext p{
-    font-size: 21px;
+    font-size: 17px;
     font-family: 'clearSans-light', serif;
     color: #777777;
 }
-.about .imagepress img{
-    width: 100%;
+.about .imagepress>img{
+    width:380px;
 }
 .about .partners h6{
     font-size: 20px;
@@ -332,8 +333,7 @@ body
     color: #000000;
     font-family: 'clearSans-bold';
 }
-.about .partners p>span{
-    display: block;
+.about .partners span{
     font-size: 14px;
     font-family: 'clearSans-light';
     color: #777777;
@@ -391,26 +391,34 @@ body
     margin: 0 1% 1% 1%;
     height: auto;
 }
-.grid:after {
-    content: '';
-    display: inline-block;
-    clear: both;
-}
-.startups .grid .element-item > * {
-    margin: 10px;
-    padding: 0;
-}
+
+
 .startups .grid .element-item  .card{
     background-color: transparent;
     border: none;
 }
 
-.startups .grid .element-item  .card-body{
+.startups .grid .element-item .card  .card-body{
+    font-family: 'clearSans-light';
     padding: 0;
+}
+.startups .grid .element-item .card  .card-body .card-title{
+    font-weight: bold;
+    text-transform: uppercase;
 }
 /* ============================================ */
 
-
+/* ============Events & competitions section==============*/
+.events{
+    height: 100vh;
+}
+/* ============================================ */
+/* ============footersection==============*/
+.footer{
+    background-color: #eeeeee;
+    height: 60vh;
+}
+/* ============================================ */
 /*  Media Query */
 /* Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 576px) {
@@ -426,6 +434,15 @@ body
     {font-size: 40px;}
     .header .header-overlay .headertext h1
     {font-size: 30px;}
+    .about .what P {
+        font-size: 17px;
+        font-family: 'clearSans-light', serif;
+        font-weight: lighter;
+        color: #777777;
+    }
+    .about .what h4 {
+        font-size: 18px;
+        color: #555555;}
     .startups .grid .element-item {
         position: relative;
         width: 90%;
@@ -440,40 +457,59 @@ body
 /* Small devices (landscape phones, 576px and up) */
 
 @media (min-width: 576px) and (max-width: 768px) {
-    .startups .grid .element-item {
+  /*  .startups .grid .element-item {
         position: relative;
         width: 90%;
         color: #262524;
         margin: 0 1% 1% 1%;
         height: auto;
     }
+*/
+    .header .header-overlay .headertext {transform: translate(0%,140%);}
 
-
+    .about .what P {
+        font-size: 17px;
+        font-family: 'clearSans-light', serif;
+        font-weight: lighter;
+        color: #777777;
+    }
+    .about .what h4 {
+        font-size: 18px;
+        color: #555555;}
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 992px) {
+    /*
     .startups .grid .element-item {
         position: relative;
         width: 30%;
         color: #262524;
         margin: 0 1% 1% 1%;
         height: auto;
+    }*/
+    .about .what P {
+        font-size: 17px;
+        font-family: 'clearSans-light', serif;
+        font-weight: lighter;
+        color: #777777;
     }
-
+    .about .what h4 {
+        font-size: 18px;
+        color: #555555;}
 
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1200px) {
-    .startups .grid .element-item {
+  /*  .startups .grid .element-item {
         position: relative;
         width: 18%;
         color: #262524;
         margin: 0 1% 1% 1%;
         height: auto;
     }
-
+*/
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
