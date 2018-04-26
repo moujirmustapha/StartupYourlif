@@ -410,13 +410,81 @@ body
 
 /* ============Events & competitions section==============*/
 .events{
-    height: 100vh;
+
+}
+.events .dateevent1 {
+    position: absolute;
+    top: -25px;
+    left: -10%;
+
+}
+.events .dateevent1>h1{
+    font-size: 100px;
+    font-family: 'clearSans-bold';
+}
+.events .dateevent1>span{
+    font-size: 16px;
+    font-family: 'clearSans-light';
+    text-transform: uppercase;
+    position: relative;
+    left: 60%;
+}
+.events .card{
+
+    background-color:transparent ;
+     border:none ;
+    border-radius:0;
+    left: 20%;
+}
+.events .btncard{
+    text-align: center;
+    padding: 10px 60px;
+    border-radius: 0;
+    background-color: #4aa500;
+    color: #fff;
+    font-family: 'clerarsans-light';
 }
 /* ============================================ */
 /* ============footersection==============*/
 .footer{
     background-color: #eeeeee;
-    height: 60vh;
+}
+
+.footer h4{
+    margin-top: 50px;
+    text-transform: uppercase;
+    font-size: 26px;
+    font-family: 'clearSans-light';
+}
+.footer p{
+    font-size: 20px;
+    font-family: 'clearSans-light';
+
+}
+.footer h1{
+    font-size: 60px;
+    font-family: 'clearSans-light';
+}
+.footer .butnfootor{
+    text-transform: uppercase;
+    background-color: #4aa500;
+    width: 280px;
+    height: 60px;
+    color: #fff;
+    font-family: 'clearsans-light';
+    font-size: 30px;
+    border: none;
+    outline: none;
+}
+.footer .coprighttext{
+    font-size: 14px;
+    font-family: 'clearSans-light';
+    margin-bottom: 0;
+    color: #898989;
+}
+.footer .coprighttext a{
+    text-decoration: none;
+    color: #f15b35;
 }
 /* ============================================ */
 /*  Media Query */
